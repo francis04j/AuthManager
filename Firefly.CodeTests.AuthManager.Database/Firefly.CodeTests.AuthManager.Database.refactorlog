@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="6c2ea37a-af86-4c52-9bb2-bfd3b39dc970" ChangeDateTime="06/29/2017 14:59:46">
+    <Property Name="ElementName" Value="[dbo].[Credential].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Credential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CredentialID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a2a44d6-f093-4290-88ce-5c0f9890c518" ChangeDateTime="06/29/2017 15:03:11">
+    <Property Name="ElementName" Value="[dbo].[User].[Password]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PasswordSalt" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="96371b1b-556a-44b7-962d-34b4270e9ef3" ChangeDateTime="06/29/2017 15:03:35">
+    <Property Name="ElementName" Value="[dbo].[User].[Created]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PasswordHash" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6c2ee020-2d67-45b5-bd6f-f0963266cf9d" ChangeDateTime="06/29/2017 15:03:59">
+    <Property Name="ElementName" Value="[dbo].[User].[Updated]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a9386cbf-f0ad-4745-aacd-c38c94ee0a70" ChangeDateTime="06/29/2017 15:10:31">
+    <Property Name="ElementName" Value="[dbo].[UserCredential].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CredentialID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="524168f4-6b4d-4378-a7ea-427c67170f92" ChangeDateTime="06/29/2017 15:10:45">
+    <Property Name="ElementName" Value="[dbo].[UserCredential].[Hash]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e2aad00-c987-43aa-b9d9-bfa9e853a799" ChangeDateTime="06/29/2017 15:10:50">
+    <Property Name="ElementName" Value="[dbo].[UserCredential].[CredentialID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CredentialId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="31863dba-095f-4079-922d-ac4c1415315a" ChangeDateTime="06/29/2017 15:11:29">
+    <Property Name="ElementName" Value="[dbo].[FK_UserCredential_User]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_UserCredential_UserId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="72d79d2f-ed33-48e6-9636-3efde7e64d45" ChangeDateTime="06/29/2017 15:12:23">
+    <Property Name="ElementName" Value="[dbo].[User].[PasswordSalt]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CredentialId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c52fd351-1797-460d-a1fe-809c02c4c5f2" ChangeDateTime="06/29/2017 15:13:26">
+    <Property Name="ElementName" Value="[dbo].[FK_UserCredential_User(UserId)]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_UserCredential_User]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b4bdcd5-0c7a-4211-9ef8-d12738f4cdcb" ChangeDateTime="06/29/2017 15:16:50">
+    <Property Name="ElementName" Value="[dbo].[UserCredential].[Salt]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserCredential]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Hash" />
+  </Operation>
+</Operations>
